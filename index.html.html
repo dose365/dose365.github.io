@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dose 365 — Daily Nutrition | Premium UK Supplements</title>
+<meta name="description" content="Dose 365 Magnesium Bisglycinate with Vitamin B6. 150mg Elemental Magnesium per capsule. BRCGS AA Certified. Made in UK.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0A0A0A;--cream:#F4F1EA;--cream2:#EDE9DF;
+  --gold:#C9A84C;--gdep:#8B6914;--gbrt:#F0D060;
+  --white:#FAFAF8;--text:#1A1200;--dim:#5A4A20;--sage:#4A7C59;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(10,10,10,0.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,168,76,0.2);height:58px;padding:0 6%;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:9px;text-decoration:none}
+.logo svg{width:30px;height:34px}
+.logo-name{font-size:15px;font-weight:700;color:var(--gold);letter-spacing:2px}
+.logo-tag{font-size:7px;color:var(--gdep);letter-spacing:3px}
+.nav-links{display:flex;gap:26px;list-style:none}
+.nav-links a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:9.5px;letter-spacing:2px;text-transform:uppercase;transition:color .3s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:var(--gold);color:var(--black);padding:8px 20px;font-size:9.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:background .3s}
+.nav-cta:hover{background:var(--gbrt)}
+
+/* HERO */
+.hero{min-height:100vh;background:var(--black);display:grid;grid-template-columns:1fr 1fr;padding-top:58px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 65% 50%,rgba(201,168,76,0.07),transparent 65%);pointer-events:none}
+.hero-l{display:flex;flex-direction:column;justify-content:center;padding:72px 44px 72px 8%;position:relative;z-index:2}
+.eyebrow{font-size:8.5px;font-weight:400;letter-spacing:5px;color:var(--gold);text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:'';width:32px;height:1px;background:var(--gold)}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,5vw,64px);font-weight:600;line-height:1.06;color:var(--white);margin-bottom:7px}
+h1 span{color:var(--gold);font-style:italic}
+.hero-sub{font-family:'Cormorant Garamond',serif;font-size:clamp(17px,2.2vw,24px);font-style:italic;color:var(--gdep);margin-bottom:26px}
+.hero-desc{font-size:12.5px;font-weight:300;line-height:1.85;color:rgba(255,255,255,0.58);max-width:400px;margin-bottom:40px}
+.hero-desc strong{color:var(--gold);font-weight:500}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-g{background:var(--gold);color:var(--black);padding:12px 32px;font-size:10.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;display:inline-block;transition:background .3s;position:relative;overflow:hidden}
+.btn-g::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.16),transparent);transform:translateX(-100%);transition:transform .5s}
+.btn-g:hover::after{transform:translateX(100%)}
+.btn-g:hover{background:var(--gbrt)}
+.btn-o{border:1px solid rgba(201,168,76,0.42);color:var(--gold);padding:12px 32px;font-size:10.5px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;display:inline-block;transition:all .3s}
+.btn-o:hover{background:rgba(201,168,76,0.1);border-color:var(--gold)}
+.hero-r{position:relative;overflow:hidden}
+.hero-r img{width:100%;height:100%;object-fit:cover;filter:brightness(.92)}
+.hbadge{position:absolute;z-index:5;background:rgba(10,10,10,0.88);backdrop-filter:blur(8px);border:1px solid rgba(201,168,76,0.32);padding:9px 14px;text-align:center}
+.hbadge.l{left:20px;top:38%}
+.hbadge.r{right:20px;bottom:36%}
+.bn{font-size:24px;font-weight:800;line-height:1}
+.bu{font-size:9.5px;font-weight:500}
+.bl{font-size:6.5px;letter-spacing:1px;margin-top:1px;text-transform:uppercase}
+.gld .bn,.gld .bu{color:var(--gbrt)} .gld .bl{color:var(--gdep)}
+.sge .bn{color:#7EC87E} .sge .bu,.sge .bl{color:var(--sage)}
+
+/* STRIP */
+.strip{background:var(--gold);padding:12px 0;overflow:hidden}
+.strip-t{display:flex;animation:sl 22s linear infinite;white-space:nowrap}
+@keyframes sl{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.si{font-size:8.5px;font-weight:700;color:var(--black);letter-spacing:3px;text-transform:uppercase;padding:0 32px;display:flex;align-items:center}
+.si::before{content:'✦';margin-right:12px;font-size:6px}
+
+/* SECTION SHARED */
+.ey{font-size:8.5px;font-weight:400;letter-spacing:5px;color:var(--gold);text-transform:uppercase;margin-bottom:12px;display:flex;align-items:center;gap:9px}
+.ey::before{content:'';width:26px;height:1px;background:var(--gold)}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,3.8vw,50px);font-weight:600;line-height:1.1;color:var(--text);margin-bottom:12px}
+h2 em{color:var(--gdep);font-style:italic}
+.sb{font-size:12.5px;font-weight:300;line-height:1.9;color:var(--dim);max-width:520px;margin-bottom:48px}
+h2.lt{color:var(--white)}
+.sb.lt{color:rgba(255,255,255,0.48)}
+.ey.lt{color:var(--gold)}
+.ctr{text-align:center}
+.ctr .ey{justify-content:center}
+.ctr .ey::before{display:none}
+.ctr h2,.ctr .sb{margin-left:auto;margin-right:auto}
+
+/* WHY */
+.why{background:var(--cream);padding:88px 8%}
+.wgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(201,168,76,0.11);border:1px solid rgba(201,168,76,0.11)}
+.wc{background:var(--cream);padding:40px 28px;transition:background .3s;position:relative;overflow:hidden}
+.wc:hover{background:var(--white)}
+.wc::after{content:'';position:absolute;bottom:0;left:28px;right:28px;height:2px;background:linear-gradient(90deg,var(--gold),transparent);transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.wc:hover::after{transform:scaleX(1)}
+.cn{font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:700;color:rgba(201,168,76,0.17);line-height:1;margin-bottom:12px}
+.ct{font-size:11px;font-weight:700;color:var(--gdep);letter-spacing:1px;text-transform:uppercase;margin-bottom:8px}
+.cb{font-size:11.5px;font-weight:300;line-height:1.8;color:var(--dim)}
+.cb strong{color:var(--gdep);font-weight:600}
+
+/* LIFESTYLE — single featured image */
+.lifestyle{background:var(--black);padding:88px 8%}
+.ls-feat{margin-top:48px;position:relative;overflow:hidden;max-height:620px}
+.ls-feat img{width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:brightness(.88);transition:transform .7s}
+.ls-feat:hover img{transform:scale(1.03)}
+.ls-overlay{
+  position:absolute;bottom:0;left:0;right:0;
+  padding:48px 8%;
+  background:linear-gradient(transparent,rgba(0,0,0,0.82));
+  display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;
+}
+.ls-stat{text-align:center}
+.ls-stat .n{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:700;color:var(--gbrt);line-height:1}
+.ls-stat .u{font-size:12px;color:var(--gold);font-weight:500}
+.ls-stat .l{font-size:8px;color:rgba(255,255,255,0.38);letter-spacing:2px;text-transform:uppercase;margin-top:4px}
+
+/* PRODUCT */
+.product{background:var(--white);padding:88px 8%;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.lframe{position:relative;display:flex;justify-content:center;align-items:center}
+.lframe::before{content:'';position:absolute;inset:-14px;border:1px solid rgba(201,168,76,0.16)}
+.lframe::after{content:'';position:absolute;inset:-28px;border:1px solid rgba(201,168,76,0.07)}
+.lframe img{width:100%;max-width:280px;filter:drop-shadow(0 18px 36px rgba(0,0,0,0.11));position:relative;z-index:2}
+.blist{list-style:none;margin-bottom:36px}
+.bi{display:flex;align-items:flex-start;gap:12px;padding:12px 0;border-bottom:1px solid rgba(201,168,76,0.11);font-size:11.5px;font-weight:300;line-height:1.7;color:var(--dim)}
+.bi:last-child{border-bottom:none}
+.bd{width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:6px}
+.bi strong{color:var(--text);font-weight:600}
+.certs{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.cert{border:1px solid rgba(201,168,76,0.22);padding:6px 13px;font-size:7.5px;font-weight:600;color:var(--gdep);letter-spacing:2px;text-transform:uppercase;background:rgba(201,168,76,0.03)}
+
+/* LABELS */
+.labels{background:var(--cream2);padding:72px 8%}
+.lpair{display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:780px;margin:40px auto 0}
+.li{text-align:center}
+.li img{width:100%;max-width:300px;filter:drop-shadow(0 10px 24px rgba(0,0,0,0.09))}
+.li p{font-size:9px;font-weight:600;color:var(--gdep);letter-spacing:3px;text-transform:uppercase;margin-top:14px}
+
+/* RANGE */
+.range{background:var(--cream);padding:88px 8%}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:840px;margin:0 auto}
+.rc{border:1px solid rgba(201,168,76,0.16);padding:40px 24px;background:var(--white);position:relative;transition:border-color .3s,transform .3s}
+.rc:hover{border-color:rgba(201,168,76,0.42);transform:translateY(-3px)}
+.rc::before{content:'COMING SOON';position:absolute;top:12px;right:12px;font-size:6px;font-weight:700;color:var(--gold);letter-spacing:2px;border:1px solid rgba(201,168,76,0.22);padding:2px 6px}
+.rc.live::before{content:'AVAILABLE NOW';color:var(--sage);border-color:rgba(74,124,89,0.28)}
+.ri{font-size:26px;margin-bottom:16px;display:block}
+.rc h3{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;color:var(--text);margin-bottom:8px}
+.rc p{font-size:10.5px;font-weight:300;color:var(--dim);line-height:1.7}
+
+/* BUY */
+.buy{background:var(--black);padding:88px 8%;text-align:center;position:relative;overflow:hidden}
+.buy::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(201,168,76,0.05),transparent 65%)}
+.price{margin:40px auto 0;display:inline-flex;align-items:baseline;gap:9px}
+.pn{font-family:'Cormorant Garamond',serif;font-size:68px;font-weight:700;color:var(--gbrt);line-height:1}
+.pm p{font-size:11.5px;font-weight:300;color:rgba(255,255,255,0.38);line-height:1.6;text-align:left}
+.buybtns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:40px}
+.bbt{display:flex;align-items:center;gap:9px;padding:14px 36px;text-decoration:none;font-size:11.5px;font-weight:600;letter-spacing:1px;transition:all .3s}
+.bbt.az{background:var(--gold);color:var(--black)}
+.bbt.az:hover{background:var(--gbrt)}
+.bbt.tt{border:1px solid rgba(255,255,255,0.16);color:var(--white)}
+.bbt.tt:hover{border-color:var(--gold);color:var(--gold)}
+.bbt svg{width:17px;height:17px;flex-shrink:0}
+.buynote{font-size:8.5px;color:rgba(255,255,255,0.16);margin-top:20px;letter-spacing:1px}
+
+/* FOOTER */
+footer{background:#060606;padding:52px 8% 26px;border-top:1px solid rgba(201,168,76,0.07)}
+.fg{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:52px;margin-bottom:40px}
+.fb h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:var(--gold);margin-bottom:9px}
+.fb p{font-size:10.5px;font-weight:300;line-height:1.8;color:rgba(255,255,255,0.28);max-width:250px}
+.fc h4{font-size:7.5px;font-weight:600;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:16px}
+.fc ul{list-style:none}
+.fc li{margin-bottom:8px}
+.fc a{font-size:10.5px;font-weight:300;color:rgba(255,255,255,0.32);text-decoration:none;transition:color .3s}
+.fc a:hover{color:var(--gold)}
+.fc span{font-size:10.5px;font-weight:300;color:rgba(255,255,255,0.32)}
+.fbot{padding-top:20px;border-top:1px solid rgba(255,255,255,0.04);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.fbot p{font-size:8.5px;color:rgba(255,255,255,0.16);letter-spacing:1px}
+.fleg{display:flex;gap:18px}
+.fleg a{font-size:8.5px;color:rgba(255,255,255,0.16);text-decoration:none;letter-spacing:1px;transition:color .3s}
+.fleg a:hover{color:var(--gold)}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .hero-r{display:none}
+  .wgrid{grid-template-columns:1fr 1fr}
+  .product{grid-template-columns:1fr}
+  .rgrid{grid-template-columns:1fr}
+  .lpair{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .fg{grid-template-columns:1fr}
+  .ls-overlay{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:600px){
+  .hero-l{padding:56px 6%}
+  .wgrid{grid-template-columns:1fr}
+  .buybtns{flex-direction:column;align-items:center}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="logo">
+    <svg viewBox="0 0 30 34" fill="none">
+      <defs>
+        <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FFF5B0"/>
+          <stop offset="40%" stop-color="#F0D060"/>
+          <stop offset="60%" stop-color="#C9A84C"/>
+          <stop offset="100%" stop-color="#7A5800"/>
+        </linearGradient>
+      </defs>
+      <path d="M15 1.5L28.5 7.5V20C28.5 27 22.5 32.5 15 35C7.5 32.5 1.5 27 1.5 20V7.5L15 1.5Z" stroke="url(#g1)" stroke-width="1.1" fill="rgba(10,10,10,0.9)"/>
+      <path d="M15 6L23 10V20C23 25.5 19.5 30 15 32C10.5 30 7 25.5 7 20V10L15 6Z" stroke="rgba(201,168,76,0.28)" stroke-width="0.5" fill="none"/>
+      <text x="15" y="19" text-anchor="middle" font-family="Poppins" font-size="6" font-weight="700" fill="#C9A84C">DOSE</text>
+      <line x1="8.5" y1="20.8" x2="21.5" y2="20.8" stroke="#3A2A00" stroke-width="0.6"/>
+      <text x="15" y="26" text-anchor="middle" font-family="Poppins" font-size="5" font-weight="400" fill="#8B6914">365</text>
+    </svg>
+    <div>
+      <div class="logo-name">DOSE 365</div>
+      <div class="logo-tag">Daily Nutrition</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#why">Why Dose 365</a></li>
+    <li><a href="#product">The Product</a></li>
+    <li><a href="#range">Our Range</a></li>
+    <li><a href="#buy">Buy Now</a></li>
+  </ul>
+  <a href="#buy" class="nav-cta">Shop Now</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-l">
+    <div class="eyebrow">Premium UK Supplement</div>
+    <h1>One Capsule.<br><span>Daily Nutrition.</span></h1>
+    <p class="hero-sub">Magnesium Bisglycinate &amp; Vitamin B6</p>
+    <p class="hero-desc">
+      <strong>150mg Elemental Magnesium</strong> per capsule — 50% more than most brands.
+      Chelated bisglycinate for maximum absorption.
+      <strong>Gentle on stomach.</strong> Made in the UK. BRCGS AA Certified.
+    </p>
+    <div class="btns">
+      <a href="#buy" class="btn-g" id="ha">Buy on Amazon</a>
+      <a href="#product" class="btn-o">Learn More</a>
+    </div>
+  </div>
+  <div class="hero-r">
+    <img src="mg_hero.webp" alt="Dose 365 Magnesium Bisglycinate supplement">
+    <div class="hbadge l gld">
+      <div class="bn">750</div>
+      <div class="bu">mg</div>
+      <div class="bl">Bisglycinate</div>
+    </div>
+    <div class="hbadge r sge">
+      <div class="bn">150</div>
+      <div class="bu">mg</div>
+      <div class="bl">Elemental Mg</div>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="strip-t">
+    <span class="si">BRCGS AA Certified</span><span class="si">Made in UK</span><span class="si">150mg Elemental Mg</span><span class="si">Chelated Bisglycinate</span><span class="si">Gentle on Stomach</span><span class="si">60 Veg Capsules</span><span class="si">Letterbox Friendly</span><span class="si">Vegan Suitable</span><span class="si">GMP Certified</span><span class="si">Vitamin B6 179% NRV</span>
+    <span class="si">BRCGS AA Certified</span><span class="si">Made in UK</span><span class="si">150mg Elemental Mg</span><span class="si">Chelated Bisglycinate</span><span class="si">Gentle on Stomach</span><span class="si">60 Veg Capsules</span><span class="si">Letterbox Friendly</span><span class="si">Vegan Suitable</span><span class="si">GMP Certified</span><span class="si">Vitamin B6 179% NRV</span>
+  </div>
+</div>
+
+<!-- WHY -->
+<section class="why" id="why">
+  <div class="rv">
+    <div class="ey">Why Dose 365</div>
+    <h2>Not all magnesium<br>is <em>created equal</em></h2>
+    <p class="sb">Most supplements use cheap magnesium oxide — poorly absorbed, often causing stomach upset. Dose 365 uses chelated bisglycinate for superior bioavailability and gentle digestion.</p>
+  </div>
+  <div class="wgrid rv d1">
+    <div class="wc"><div class="cn">01</div><div class="ct">50% More Per Capsule</div><p class="cb">Most brands deliver <strong>100mg</strong> elemental magnesium. Dose 365 delivers <strong>150mg</strong> — 50% more in every capsule.</p></div>
+    <div class="wc"><div class="cn">02</div><div class="ct">Chelated For Absorption</div><p class="cb">Bisglycinate bound to glycine amino acid bypasses digestive competition. <strong>Your body actually uses it.</strong></p></div>
+    <div class="wc"><div class="cn">03</div><div class="ct">Gentle on Stomach</div><p class="cb">Absorbs without osmotic pull — <strong>no laxative effect.</strong> Perfect for sensitive stomachs.</p></div>
+    <div class="wc"><div class="cn">04</div><div class="ct">Active Vitamin B6</div><p class="cb">Vitamin B6 at <strong>179% NRV</strong> per capsule. Supports nervous system and reduces tiredness.</p></div>
+    <div class="wc"><div class="cn">05</div><div class="ct">BRCGS AA Certified</div><p class="cb">Manufactured in a <strong>BRCGS AA certified facility</strong> — highest grade in food safety. Independently audited.</p></div>
+    <div class="wc"><div class="cn">06</div><div class="ct">Letterbox Friendly</div><p class="cb">Flat postal design fits through any letterbox. <strong>60 capsules, 2 months supply</strong> — no missed deliveries.</p></div>
+  </div>
+</section>
+
+<!-- LIFESTYLE — single image -->
+<section class="lifestyle">
+  <div class="rv">
+    <div class="ey lt">Daily Ritual</div>
+    <h2 class="lt">Built for <em>everyday life</em></h2>
+    <p class="sb lt">One capsule. Every day. Fits seamlessly into any routine.</p>
+  </div>
+  <div class="ls-feat rv d1">
+    <img src="mg_hero.webp" alt="Dose 365 Magnesium Bisglycinate daily supplement">
+    <div class="ls-overlay">
+      <div class="ls-stat"><div class="n">150<span class="u">mg</span></div><div class="l">Elemental Magnesium</div></div>
+      <div class="ls-stat"><div class="n">179<span class="u">%</span></div><div class="l">NRV Vitamin B6</div></div>
+      <div class="ls-stat"><div class="n">60</div><div class="l">Veg Capsules</div></div>
+      <div class="ls-stat"><div class="n">AA</div><div class="l">BRCGS Grade</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT -->
+<section class="product" id="product">
+  <div class="lframe rv">
+    <img src="mg_front.webp" alt="Dose 365 Magnesium Bisglycinate front label">
+  </div>
+  <div class="rv d1">
+    <div class="ey">The Product</div>
+    <h2>Magnesium<br><em>Bisglycinate</em></h2>
+    <ul class="blist">
+      <li class="bi"><div class="bd"></div><div><strong>750mg Magnesium Bisglycinate</strong> — 150mg elemental magnesium (40% NRV) per capsule</div></li>
+      <li class="bi"><div class="bd"></div><div><strong>Vitamin B6 2.5mg (179% NRV)</strong> — supports absorption and nervous system</div></li>
+      <li class="bi"><div class="bd"></div><div><strong>Supports normal muscle function</strong> — EFSA approved health claim</div></li>
+      <li class="bi"><div class="bd"></div><div><strong>Reduces tiredness and fatigue</strong> — EFSA approved health claim</div></li>
+      <li class="bi"><div class="bd"></div><div><strong>Gentle on digestion</strong> — no laxative effect unlike oxide or citrate</div></li>
+      <li class="bi"><div class="bd"></div><div><strong>Vegan suitable</strong> — HPMC capsules, non-GMO, no artificial additives</div></li>
+      <li class="bi"><div class="bd"></div><div>Take <strong>1 capsule daily</strong> — or 2 for higher needs (300mg, 80% NRV)</div></li>
+    </ul>
+    <div class="certs">
+      <span class="cert">BRCGS AA</span><span class="cert">GMP Certified</span><span class="cert">Made in UK</span><span class="cert">Vegan</span><span class="cert">60 Capsules</span><span class="cert">2 Months Supply</span>
+    </div>
+  </div>
+</section>
+
+<!-- LABELS -->
+<section class="labels rv">
+  <div class="ctr">
+    <div class="ey">Label Artwork</div>
+    <h2>Front &amp; Back <em>Label</em></h2>
+  </div>
+  <div class="lpair">
+    <div class="li"><img src="mg_front.webp" alt="Front label"><p>Front Label</p></div>
+    <div class="li"><img src="mg_back.webp" alt="Back label"><p>Back Label</p></div>
+  </div>
+</section>
+
+<!-- RANGE -->
+<section class="range" id="range">
+  <div class="ctr rv">
+    <div class="ey">Our Range</div>
+    <h2>More products<br><em>coming soon</em></h2>
+    <p class="sb">Building a complete daily nutrition range. BRCGS AA certified, chelated forms, honest dosing.</p>
+  </div>
+  <div class="rgrid rv d1">
+    <div class="rc live"><span class="ri">💊</span><h3>Magnesium Bisglycinate</h3><p>750mg / 150mg Elemental Mg + Vitamin B6 179% NRV · 60 Veg Capsules · 2 Months Supply</p></div>
+    <div class="rc"><span class="ri">☀️</span><h3>Vitamin D3 4000IU</h3><p>100μg high-strength vitamin D3 · Cholecalciferol · Vegetarian · 365 Tablets · Full Year Supply</p></div>
+    <div class="rc"><span class="ri">✦</span><h3>New Product</h3><p>A new addition to the Dose 365 daily nutrition range is currently in development.</p></div>
+  </div>
+</section>
+
+<!-- BUY -->
+<section class="buy" id="buy">
+  <div class="ctr rv">
+    <div class="ey lt">Get Yours</div>
+    <h2 class="lt">Start your<br><em>daily routine</em></h2>
+    <p class="sb lt">Available on Amazon UK. Letterbox friendly. 60 capsules — 2 months supply.</p>
+  </div>
+  <div class="price rv d1">
+    <div class="pn">£9.99</div>
+    <div class="pm"><p>60 Capsules<br>2 Months Supply<br>Free UK Delivery</p></div>
+  </div>
+  <div class="buybtns rv d2">
+    <a href="#" class="bbt az" id="ab">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.231-.09.28-.09.13 0 .196.083.196.25 0 .04-.01.09-.027.16-.018.067-.044.134-.077.2-.65 1.4-1.598 2.526-2.856 3.38-1.26.85-2.67 1.273-4.24 1.273-2.162 0-4.024-.764-5.59-2.293-.072-.072-.107-.137-.107-.194 0-.1.07-.17.21-.21.072-.02.144-.03.215-.03.15 0 .28.034.39.1.98.538 2.13.807 3.45.807 1.64 0 3.12-.45 4.45-1.35s2.34-2.12 3.03-3.66c.014-.04.022-.072.022-.1 0-.065-.048-.097-.146-.097-.04 0-.083.007-.128.02-.84.23-1.73.34-2.67.34-2.38 0-4.47-.72-6.28-2.17-.088-.076-.133-.167-.133-.274 0-.1.056-.18.17-.24.113-.06.23-.09.35-.09zm15.42-10.06c-.04 0-.077.007-.113.02-.08.027-.17.063-.27.107-.31.14-.64.23-.987.27-.35.04-.64.06-.87.06-.2 0-.38-.01-.55-.03C11.86 7.9 11 7.34 10.25 6.5c-.745-.84-1.15-1.86-1.15-3.07 0-.4.046-.8.14-1.2.094-.4.22-.76.38-1.07.06-.1.09-.2.09-.3 0-.22-.1-.33-.3-.33-.1 0-.22.05-.36.15C8.19 1.59 7.55 2.2 7.07 2.93c-.48.73-.78 1.56-.9 2.5-.12.93-.1 1.82.05 2.67.3 1.64 1.1 2.98 2.38 4.02 1.28 1.04 2.78 1.56 4.5 1.56 1.12 0 2.18-.24 3.17-.72.99-.48 1.78-1.15 2.37-2.01.06-.1.09-.2.09-.3 0-.22-.1-.33-.31-.33h-.01z"/></svg>
+      Buy on Amazon UK
+    </a>
+    <a href="https://www.tiktok.com/@dose365" target="_blank" class="bbt tt">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.52V6.79a4.85 4.85 0 01-1.02-.1z"/></svg>
+      Follow @dose365
+    </a>
+  </div>
+  <p class="buynote">Update Amazon link when listing is live · Update TikTok handle to your actual username</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fg">
+    <div class="fb">
+      <h3>Dose 365</h3>
+      <p>Premium UK supplements. BRCGS AA certified. Chelated forms. Honest dosing. Letterbox friendly delivery.</p>
+      <br><p>DP Atlantic Ltd T/A Dose 365<br>61 Bridge Street, Kington, HR5 3DJ<br>sales@dose365.co.uk</p>
+    </div>
+    <div class="fc">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="#product">Magnesium Bisglycinate</a></li>
+        <li><span>Vitamin D3 4000IU — Soon</span></li>
+        <li><span>New Product — Soon</span></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="mailto:sales@dose365.co.uk">sales@dose365.co.uk</a></li>
+        <li><a href="https://www.tiktok.com/@dose365" target="_blank">TikTok: @dose365</a></li>
+        <li><a href="#buy">Amazon UK</a></li>
+        <li><a href="https://www.dose365.co.uk">www.dose365.co.uk</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fbot">
+    <p>© 2026 DP Atlantic Ltd T/A Dose 365. All rights reserved.</p>
+    <div class="fleg"><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in')}),{threshold:.08});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+['ab','ha'].forEach(id=>{
+  const el=document.getElementById(id);
+  if(el)el.addEventListener('click',function(e){
+    if(this.getAttribute('href')==='#'){
+      e.preventDefault();const o=this.innerHTML;
+      this.textContent='Amazon link coming soon!';
+      setTimeout(()=>this.innerHTML=o,2500);
+    }
+  });
+});
+</script>
+</body>
+</html>
